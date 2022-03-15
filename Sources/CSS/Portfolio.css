@@ -36,6 +36,7 @@ header {
 #job-title {
     margin: 5px;
     color: navy;
+    font-weight: 500;
 }
 
 #statement {
