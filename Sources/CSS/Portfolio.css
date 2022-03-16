@@ -1,135 +1,83 @@
 * {
     color: black;
-    background-color: blue;
-    font-family: helvetica;
-    border: 1px solid red;
+    background-color: rgb(238, 247, 243);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border-radius: 50px;
     padding: 10px;
 }
 
 header {
-    background-color: aquamarine;
+    background-color: rgb(3, 71, 3);
     width: 100%;
+    height: 50px;
     margin: auto;
-}
-
-#menu{
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    background-color: aquamarine;
-    border: 2px solid black;
-    padding: 0px 15px;
 }
 
-.bubble {
-    background-color: green;
+.bubble,
+footer div {
+    background-color: rgb(146, 196, 202);
     z-index: 1;
     width: 90%;
     margin: 50px auto;
 }
 
-.bubble #name,
- #job-title,
- p,
- h3,
- li,
- ul{
-    background-color: green;
-}
-
 #headshot {
     width: 500px;
     height: 500px;
-    border: 1px solid black;
+    border: 10px solid rgba(10, 116, 134, 0.219);
     border-radius: 50%;
-    margin: 100px 50px 40px 50px;
 }
 
 #name {
     text-transform: uppercase;
     display: inline-block;
     font-size: 50px;
+    text-align: right;
 }
 
 #job-title {
     margin: 5px;
     font-weight: 500;
     display: inline-block;
+    font-size: 45px;
+    text-align: right;
 }
 
 #statement {
     margin: 50px auto;
 }
 
+#statement p {
+    font-size: 25px;
+}
+
 #software-experience {
     margin: 10px;
-}
-
-#resume {
-    text-align: center;
-    margin: 50px;
-}
-
-#resume a {
-    color: black;
-    font-size: 18px;
-    background-color: green;
-    border-top: 1.5px solid gray;
-    border-right: 1.5px solid black;
-    border-bottom: 1.5px solid black;
-    border-left: 1.5px solid gray;
-    border-radius: 5px;
-    padding: 7.5px;
-}
-
-#resume a:hover {
-    color: green;
-    background-color: black;
-    border-top: 1.5px solid black;
-    border-right: 1.5px solid gray;
-    border-bottom: 1.5px solid white;
-    border-left: 1.5px solid gray;}
-
-#contact-info {
-    text-align: center;
-}
-
-#contact-info a {
-    margin: 10px;
-    padding: 10px;
-    border-top: 1.5px solid gray;
-    border-right: 1.5px solid black;
-    border-bottom: 1.5px solid black;
-    border-left: 1.5px solid gray;   
-    background-color: green;
-    color: black;
-    border-radius: 10%;
-}
-
-#contact-info a:hover {
-    color: green;
-    background-color: black;
-    border-top: 1.5px solid black;
-    border-right: 1.5px solid gray;
-    border-bottom: 1.5px solid white;
-    border-left: 1.5px solid gray;    
-}
-
-a {
-    color:green;
-}
-
-a:hover {
-    color: black;
-}
-
-h4 {
-    background-color: gray;
+    padding: 75px 0px 10px 50px;
+    font-size: 35px;
 }
 
 li {
     list-style: square;
+    background-color: rgb(146, 196, 202);
+    z-index: 1;
+    width: 90%;
+    padding: 0px;
+    margin: 0px 25px;
+    font-size: 25px;
+}
+
+p {
+    font-size: 20px;
+}
+
+footer  {
+    background-color: rgb(3, 71, 3);
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    position: fixed;
+    bottom: 0;
 }
