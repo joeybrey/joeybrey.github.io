@@ -71,6 +71,7 @@ li {
 footer {
     background-color: rgb(3, 71, 3);
     width: 95%;
+    padding: 25px;
 }
 
 #contact-info {
