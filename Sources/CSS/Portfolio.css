@@ -33,6 +33,7 @@ header {
     z-index: 1;
     width: 90%;
     border: 7px solid rgba(10, 116, 134, 0.219);
+    box-shadow: 3px 3px 10px black;
 }
 
 .contents {
