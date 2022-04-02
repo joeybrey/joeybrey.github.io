@@ -5,13 +5,12 @@
     border-radius: 50px;
     margin: 15px auto;
     padding: 10px;
-    display: flexbox;
     box-sizing: border-box;
     font-size: 25px;
     text-align: left;
     justify-content: center;
     width: 100%;
-    line-height: 25px;
+    align-items: center;
 }
 
 html,
@@ -26,11 +25,18 @@ header {
     position: sticky;
     top: 7px;
     padding: 25px;
+    opacity: 0.85;
+    z-index: 1;
+}
+
+nav {
+    background-color: rgb(3, 71, 3);
+    padding: 0px;
+    margin: 0px;
 }
 
 .bubble {
     background-color: rgb(146, 196, 202);
-    z-index: 1;
     width: 90%;
     border: 7px solid rgba(10, 116, 134, 0.219);
     box-shadow: 3px 3px 10px black;
@@ -38,46 +44,63 @@ header {
 
 .contents {
     background-color: rgb(146, 196, 202);
-    z-index: 1;
     width: 90%;
 }
 
 #headshot {
+    animation-name: headshot;
+    animation-duration: 2.75s;
+    animation-iteration-count: infinite;
     width: 200px;
     border: 5px solid rgba(10, 116, 134, 0.219);
     border-radius: 50%;
     padding: 5px;
-    margin: 20px 0px 0px 20px;
+    margin: 40px;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes headshot {
+    0% {
+        border: 5px solid rgba(10, 116, 134, 0.219);
+    }    
+    50% {
+        border: 5px solid gray;
+    }
+    100% {
+        border: 5px solid rgba(10, 116, 134, 0.219);
+    }
 }
 
 #name {
     text-transform: uppercase;
-    font-size: 35px;
     text-align: right;
+    margin: 0px;
+    font-size: 30px;
+    white-space: nowrap;
 }
 
-#job-title {
-    font-weight: 500;
+.job-title {
     text-align: right;
+    font-weight: lighter;
+    margin: 0px;
+    padding: 5px;
+    font-size: 25px;
 }
 
 li {
     list-style: square;
     background-color: rgb(146, 196, 202);
-    z-index: 1;
     width: 90%;
     padding: 0px;
-}
-
-footer {
-    background-color: rgb(3, 71, 3);
-    width: 95%;
-    padding: 25px;
 }
 
 #contact-info {
     background-color: rgb(3, 71, 3);
     text-align: center;
+    width: 95%;
+    padding: 25px;
+    opacity: 0.85;
 }
 
 a {
@@ -86,8 +109,25 @@ a {
     color: rgb(238, 247, 243);
 }
 
+a:hover {
+    transform: scale(1.05);
+}
+
 hr {
     border: 2px solid gray;
     background-color: rgb(145, 172, 149);
     width: 85%;
+    background: linear-gradient(180deg, rgb(145, 172, 149), gray);
+}
+
+#profile {
+    display: flex;
+    flex-direction: row;
+}
+
+#name-and-title {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 40px;
 }
